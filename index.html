@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <title>Belezas Naturais da Holanda</title>
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-text">
+            <h1>Atrações Naturais da Holanda</h1>
+            <p>Campos de tulipas, moinhos de vento e muito mais.</p>
+        </div>
+    </header>
+    
+    <section id="atracoes" class="atracoes">
+        <div class="container"> 
+            <img height="400px" src="/assets/images/principal.jpg" alt="">
+            <h3 id="mainText">Holanda é um país mundialmente reconhecido por sua paisagem rica e bela e sua enriquecedora cultura. 
+            Com paisagens vibrantes de campos de tulipas, calmos canais e moinhos de vento icônicos, a Holanda tem sua beleza natural.
+            Os campos de tulipas da região de Keukenhof floresce na primavera, criando um mar de cores atraente para amantes da natureza e fotógrafos. 
+            Da mesma forma, os canais de Amsterdã, com antigas casas e bicicletas entre eles, retratam uma imagem pitoresca do passado. 
+            Com um novo tesouro natural escondido a cada esquina, a Holanda é um dos destinos principais para os espectadores que buscam a verdadeira integração da natureza e a tradição.</h3>
+            <div style="text-align: center; margin: 20px;">
+        <button id="revealButton" class="button">Mostrar Mais</button>
+    </div>
+    <div class="row">
+                <div class="col">
+                    <h3>Moinhos de Vento</h3>
+                    <p>Visite os moinhos de vento de Kinderdijk.</p>
+                    <img height="400px" src="/assets/images/moinhos.jpeg" alt="">
+                </div>
+                <div class="col">
+                    <h3>Campos de Tulipas</h3>
+                    <p>Conheça os famosos campos de tulipas.</p>
+                    <img height="400px" src="/assets/images/campotulitas.png" alt="">
+                    <a href="/pages/pagetwo.html" class="button">Conheça Mais Sobre</a>
+                </div>
+                <div class="col">
+                    <h3>Canais de Amsterdã</h3>
+                    <p>Explore os belos canais da capital holandesa.</p>
+                    <img height="400px" src="/assets/images/canais.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <h2>Feedback sobre as belezas naturais da Holanda</h2>
+    <form id="feedbackForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required>
+        
+        <label for="email">E-mail:</label>
+        <input type="email" id="email" name="email" placeholder="Digite seu e-mail" required>
+        
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="5" placeholder="Escreva sua mensagem" required></textarea>
+        
+        <button type="submit">Enviar</button>
+    </form>
+
+    <script>
+        const revealButton = document.getElementById('revealButton');
+        const mainText = document.getElementById('mainText');
+
+    
+        mainText.style.display = 'none';
+
+    
+        revealButton.addEventListener('click', () => {
+            if (mainText.style.display === 'none') {
+                mainText.style.display = 'block';
+                revealButton.textContent = 'Mostrar Menos';
+            } else {
+                mainText.style.display = 'none';
+                revealButton.textContent = 'Mostrar Mais';
+            }
+        });
+    </script>
+
+    <footer>
+        <p>&copy; 2024 Belezas Naturais da Holanda. Todos os direitos reservados.</p>
+        <p>Italo Silva e Raylan Silva</p>
+    </footer>
+</body>
+</html>

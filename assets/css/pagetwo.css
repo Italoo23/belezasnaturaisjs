@@ -1,0 +1,137 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    line-height: 1.6;
+}
+
+.hero {
+    background-image: url('/assets/images/moinhos.jpeg');
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.hero a{
+    margin-right: 560px;
+}
+
+.hero-text h1 {
+    font-size: 3em;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 1.2em;
+    margin-bottom: 30px;
+}
+
+.button {
+    margin-left: 600px;
+    padding: 15px 30px;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.button:hover {
+    background-color: #45a049;
+}
+
+.moinhos {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.moinhos h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #4CAF50;
+}
+
+.conteudo {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.conteudo h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #4CAF50;
+}
+
+.canais {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.canais h2 {
+    font-size: 2.5em;
+    margin-bottom: 40px;
+    color: #4CAF50;
+}
+
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.col {
+    flex: 1 1 300px;
+    margin: 20px;
+}
+
+.col h3 {
+    font-size: 1.8em;
+    margin-bottom: 10px;
+}
+
+.col p {
+    font-size: 1em;
+    margin-bottom: 20px;
+}
+
+.col img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px 0;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .hero-text h1 {
+        font-size: 2.5em;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .button {
+        padding: 10px 20px;
+    }
+}
